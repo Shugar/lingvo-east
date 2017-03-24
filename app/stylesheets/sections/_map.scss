@@ -24,3 +24,20 @@
     color: #D0011B;
   }
 }
+
+
+@media (max-width: 768px) {
+  .map {
+    .container {
+      position: static;
+      transform: none;
+    }
+
+    &-popup {
+      padding: 25px 30px;
+      font-size: 22px;
+      letter-spacing: 0.61px;
+      line-height: 28px;
+    }
+  }
+}
