@@ -94,3 +94,61 @@
     line-height: 20px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .advantage {
+    padding: 36px 0 46px;
+
+    &__title {
+      font-size: 24px;
+      letter-spacing: 1.5px;
+      line-height: 29px;
+    }
+
+    &__subtitle {
+      font-size: 13px;
+      letter-spacing: 0.88px;
+      line-height: 17px;
+      max-width: 100%;
+    }
+
+    &-features {
+      margin-top: 25px;
+      display: block;
+    }
+
+    &-features__item {
+      flex: 1;
+      margin-bottom: 21px
+    }
+
+    &-features__item--6 {
+      margin-bottom: 0px;
+    }
+
+    &-features__icon {
+      flex: 0 0 65px;
+      height: 65px;
+
+      margin-right: 24px;
+    }
+
+    &-features__info {
+      margin-top: 2px;
+    }
+
+    &-features__title {
+      font-size: 18px;
+      letter-spacing: 1.04px;
+    }
+
+    &-features__text {
+      margin-top: 6px;
+
+      font-size: 10px;
+      letter-spacing: 0.4px;
+      line-height: 14px;
+    }
+  }
+}
