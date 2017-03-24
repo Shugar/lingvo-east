@@ -338,5 +338,34 @@ body
   
   .footer
     .container
-  
+      .footer-info
+        .footer-info__title
+          | Запись
+          br
+          | на занятие
+          br
+          | или просто
+          br
+          | пишите ;)
+        .footer-info__subtitle
+          | Подробнее о самом экзамене мы расскажем позже. А пока предупредим, что для успешного обучения в университетах
+        .footer-socials
+          a.footer-socials__fb(href="#")
+          a.footer-socials__vk(href="#")
+          a.footer-socials__you(href="#")
+
+      form.footer-form
+        .footer-form__input
+          input(type="text" placeholder="ФИО")
+        .footer-form__input
+          input(type="email" placeholder="E-mail")
+        .footer-form__input
+          input(type="number" placeholder="Телефон")
+        .footer-form__input
+          input(type="text" placeholder="Интересующая программа")
+        .footer-form__textarea
+          textarea(placeholder="Ваше сообщение")
+        .footer-form__button.button.button-nobg
+          | отправить заявку
+        
 script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsikV4SjdANJHBhd2AEzcvD5_mg-aFWdQ&callback=initMap" async defer)

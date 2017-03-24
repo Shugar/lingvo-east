@@ -1,3 +1,119 @@
 .footer {
   padding: 90px 0 80px;
+
+  br {
+
+  }
+
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  &-info {
+    flex: 0 0 45%;
+    padding-right: 90px;
+
+    text-align: right;
+  }
+
+  &-info__title {
+    font-size: 50px;
+    color: #E40715;
+    letter-spacing: 3.63px;
+  }
+
+  &-info__subtitle {
+    margin-top: 57px;
+
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 1.35px;
+    line-height: 28px;
+  }
+
+  &-socials {
+    margin-top: 40px;
+  }
+
+  &-socials__fb,
+  &-socials__vk,
+  &-socials__you {
+
+  }
+
+  &-socials__fb {
+
+  }
+
+  &-socials__vk {
+
+  }
+
+  &-socials__you {
+
+  }
+
+  &-form {
+    margin-top: 14px;
+    display: block;
+    flex: 0 0 55%;
+  }
+
+  &-form__input,
+  &-form__textarea {
+    font-size: 22px;
+    color: #000000;
+    letter-spacing: 1.1px;
+    line-height: 33px;
+
+    margin-bottom: 18px;
+
+    input,
+    textarea {
+      display: block;
+      padding-bottom: 16px;
+      background: none;
+      outline: none;
+      width: 100%;
+      border: none;
+      border-bottom: 1px #000000 solid;
+
+      &::-webkit-input-placeholder {
+        color: #000000;
+      }
+
+      &::-moz-placeholder {
+        color: #000000;
+      }
+
+      &:-ms-input-placeholder {
+        color: #000000;
+      }
+
+      &:-moz-placeholder {
+        color: #000000;
+      }
+    }
+  }
+
+  &-form__textarea {
+    margin-bottom: 0;
+
+    textarea {
+      min-height: 200px;
+      resize: vertical;
+    }
+  }
+
+  &-form__button {
+    margin-top: 71px;
+    padding: 11px 28px 12px;
+
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 1.09px;
+    line-height: 29px;
+  }
 }
