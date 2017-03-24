@@ -55,3 +55,55 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .teacher {
+    padding: 30px 0 60px;
+
+    &__title {
+      font-size: 22px;
+      letter-spacing: 1.37px;
+    }
+
+    &-content {
+      display: block;
+      margin-top: 20px;
+    }
+
+    &-photo {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-photo__image {
+      height: 105px;
+      flex: 0 0 105px;
+    }
+
+    &-photo__button {
+      margin-top: 0;
+      padding: 6px 25px;
+
+      font-size: 12px;
+      letter-spacing: 0.75px;
+      max-width: 120px;
+    }
+
+    &-info {
+      margin-top: 26px;
+    }
+
+    &-info__title {
+      font-size: 20px;
+      letter-spacing: 1.25px;
+    }
+
+    &-info__text {
+      font-size: 13px;
+      letter-spacing: 0.88px;
+      line-height: 17px;
+    }
+  }
+}
