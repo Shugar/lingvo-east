@@ -84,3 +84,48 @@
     margin-top: 20px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 24px 0;
+    background-position: 90% center;
+
+    .container {
+      display: block;
+    }
+
+    &-logo {
+      margin-left: 0;
+      height: 127px;
+      width: 90px;
+    }
+
+    &__title {
+      font-size: 17px;
+      letter-spacing: 1.06px;
+
+      margin-top: 21px;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &-contact {
+      margin-top: 15px;
+      text-align: left;
+    }
+
+    &-contact__phone {
+      margin-left: 4px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    &__arrow {
+      width: 30px;
+      height: 15px;
+    }
+  }
+}
