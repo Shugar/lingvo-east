@@ -40,7 +40,7 @@ head
     }
 
 body
-  .header
+  .header#header
     .container
       .header-logo
       .header-center
@@ -340,19 +340,13 @@ body
     .container
       .footer-info
         .footer-info__title
-          | Запись
-          br
-          | на занятие
-          br
-          | или просто
-          br
-          | пишите ;)
+          | Запись <br> на занятие <br> или просто <br> пишите ;)
         .footer-info__subtitle
           | Подробнее о самом экзамене мы расскажем позже. А пока предупредим, что для успешного обучения в университетах
         .footer-socials
-          a.footer-socials__fb(href="#")
-          a.footer-socials__vk(href="#")
-          a.footer-socials__you(href="#")
+          a.footer-socials__fb(target="_blank" href="http://facebook.com")
+          a.footer-socials__vk(target="_blank" href="http://vk.com")
+          a.footer-socials__you(target="_blank" href="http://youtube.com")
 
       form.footer-form
         .footer-form__input
@@ -367,5 +361,8 @@ body
           textarea(placeholder="Ваше сообщение")
         .footer-form__button.button.button-nobg
           | отправить заявку
+    
+      a.footer__up(href="#header")
+        | <span>^</span> вверх
         
 script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsikV4SjdANJHBhd2AEzcvD5_mg-aFWdQ&callback=initMap" async defer)

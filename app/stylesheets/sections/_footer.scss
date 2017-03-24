@@ -1,10 +1,6 @@
 .footer {
   padding: 90px 0 80px;
 
-  br {
-
-  }
-
   .container {
     display: flex;
     flex-flow: row nowrap;
@@ -35,24 +31,47 @@
 
   &-socials {
     margin-top: 40px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   &-socials__fb,
   &-socials__vk,
   &-socials__you {
+    margin-right: 10px;
 
+    display: block;
+    height: 30px;
+    width: 30px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    will-change: opacity;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &-socials__fb {
-
+    background-image: url('../images/fb.svg');
   }
 
   &-socials__vk {
-
+    background-image: url('../images/vk.svg');
   }
 
   &-socials__you {
+    margin-right: 0;
 
+    background-image: url('../images/you.svg');
   }
 
   &-form {
@@ -115,5 +134,14 @@
     color: #000000;
     letter-spacing: 1.09px;
     line-height: 29px;
+  }
+
+  &__up {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    font-size: 36px;
+    color: #D0011B;
+    letter-spacing: 1.57px;
   }
 }
