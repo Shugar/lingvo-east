@@ -1,0 +1,28 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 30px;
+  text-align: left;
+}
+
+
+#map {
+  height: 400px;
+}

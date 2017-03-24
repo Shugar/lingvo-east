@@ -1,0 +1,146 @@
+.school {
+  &-about {
+    padding: 85px 0 65px;
+  }
+
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  &-headings {
+    flex: 0 0 37%;
+  }
+
+  &-headings__title {
+    font-size: 48px;
+    color: #000000;
+    letter-spacing: 3px;
+  }
+
+  &-headings__subtitle {
+    margin-top: 30px;
+
+    font-size: 30px;
+    color: #E30713;
+    letter-spacing: 1.87px;
+    line-height: 45px;
+  }
+
+  &-info {
+    margin-top: 10px;
+    flex: 0 0 57%;
+
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 1.36px;
+    line-height: 28px;
+  }
+
+  &-info__text {
+    margin-bottom: 28px;
+
+    span {
+      text-decoration: underline;
+      cursor: pointer;
+      margin-left: 3px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-info__hidden {
+    margin-top: 28px;
+
+    overflow: hidden;
+    max-height: 0;
+
+    transition: max-height 1s ease;
+    will-change: max-height;
+
+    &.school-info__hidden--active {
+      max-height: 9999px;
+    }
+  }
+
+  &-info__hidden-text {
+    margin-bottom: 28px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
+  &-features {
+    background: rgb(250,250,250);
+    padding: 75px 0;
+
+    .container {
+      flex-flow: row wrap;
+    }
+  }
+
+  &-features__item {
+    flex: 0 0 45%;
+
+    margin-bottom: 46px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    &--3,
+    &--4 {
+      margin-bottom: 0;
+    }
+
+    &--1 .school-features__icon {
+      background-image: url('../images/feature-1.svg');
+    }
+
+    &--2 .school-features__icon {
+      background-image: url('../images/feature-2.svg');
+    }
+
+    &--3 .school-features__icon {
+      background-image: url('../images/feature-3.svg');
+    }
+
+    &--4 .school-features__icon {
+      background-image: url('../images/feature-4.svg');
+    }
+  }
+
+  &-features__icon {
+    margin-right: 44px;
+    flex: 0 0 167px;
+    height: 168px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  &-features__info {
+    margin-top: 24px;
+  }
+
+  &-features__title {
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 1.38px;
+  }
+
+  &-features__text {
+    margin-top: 10px;
+
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0.81px;
+    line-height: 20px;
+  }
+}

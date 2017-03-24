@@ -1,0 +1,30 @@
+.english {
+  display: flex;
+  flex-flow: row nowrap;
+
+  &-photo {
+    flex: 0 0 47%;
+    background: url('../images/english@3x.jpg') no-repeat center center / cover;
+  }
+
+  &-info {
+    padding: 60px 70px 90px
+  }
+
+  &-info__title {
+    margin-bottom: 24px;
+
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 2.5px;
+  }
+
+  &-info__text {
+    margin-bottom: 28px;
+
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 1.35px;
+    line-height: 28px;
+  }
+}

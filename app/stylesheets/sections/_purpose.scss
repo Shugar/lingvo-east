@@ -1,0 +1,33 @@
+.purpose {
+  background: url('../images/purpose_bg@3x.jpg') no-repeat center center / cover;
+  padding: 100px 0;
+
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+  }
+
+  &-info {
+    flex: 0 0 45%;
+  }
+
+  &-info__title {
+    font-size: 36px;
+    color: #000000;
+    letter-spacing: 2.25px;
+  }
+
+  &-info__text {
+    margin-top: 36px;
+
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 1.09px;
+    line-height: 20px;
+  }
+
+  &-info__button {
+    margin-top: 22px;
+  }
+}

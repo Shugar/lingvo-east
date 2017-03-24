@@ -1,0 +1,26 @@
+.map {
+  position: relative;
+
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+  }
+
+  &-popup {
+    display: inline-block;
+
+    padding: 25px 65px 25px 40px;
+    background: #fff;
+
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    line-height: 33px;
+  }
+
+  &-popup__text:first-child {
+    color: #D0011B;
+  }
+}

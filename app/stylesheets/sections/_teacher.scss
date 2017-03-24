@@ -1,0 +1,57 @@
+.teacher {
+  padding: 50px 0 120px;
+  background: #FBFBFB;
+
+  &__title {
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 2.5px;
+  }
+
+  &-content {
+    margin-top: 55px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  &-photo {
+    // margin-right: 74px;
+  }
+
+  &-photo__image {
+    background: url('../images/teacher.png') no-repeat center center / contain;
+    width: 205px;
+    height: 205px;
+  }
+
+  &-photo__button {
+    margin-top: 38px;
+  }
+
+  &-info {
+    flex: 0 0 60%;
+  }
+
+  &-info__title {
+    margin-bottom: 25px;
+
+    font-size: 30px;
+    color: #E30714;
+    letter-spacing: 1.87px;
+  }
+
+  &-info__text {
+    margin-bottom: 25px;
+
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 1.22px;
+    line-height: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

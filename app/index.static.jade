@@ -1,0 +1,342 @@
+doctype html
+head
+  meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+  meta(name="viewport" content="width=device-width")
+  meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+  title Китайский язык Ростов-на-дону школа — "Лингво East"
+  link(rel="stylesheet" href="stylesheets/app.css")
+  link(rel="icon" href="images/favicon.ico" type="image/x-icon")
+
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+
+  script.
+    require('initialize');
+    
+    var styles = [
+      {
+        stylers: [
+          { saturation: -100 }
+        ]
+      }
+    ]
+    
+    function initMap() {
+      var marker = {lat: 47.2272931, lng: 39.7231895};
+      
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 47.2272931, lng: 39.7210008 },
+        scrollwheel: false,
+        zoom: 17,
+        disableDefaultUI: true
+      });
+
+      map.setOptions({styles: styles});
+      
+      var marker = new google.maps.Marker({
+        position: marker,
+        map: map
+      });
+    }
+
+body
+  .header
+    .container
+      .header-logo
+      .header-center
+        .header__title
+          | Школа китайского языка
+          br
+          | в Ростове-на-Дону
+
+        .header__menu
+          .header__list
+            a.header__list-item(href="#")
+              | О школе
+            a.header__list-item(href="#")
+              | Формы обучения
+            a.header__list-item(href="#")
+              | Программы обучения
+            a.header__list-item(href="#")
+              | Преподаватели
+          .header__list
+            a.header__list-item(href="#")
+              | Цель обучения
+            a.header__list-item(href="#")
+              | Преимущества нашей школы
+            a.header__list-item(href="#")
+              | Китайский на английском
+            a.header__list-item(href="#")
+              | Контакты
+
+      .header-contact
+        .header-contact__phone
+          | +7(908) 508-93-06
+        .button.header-contact__button
+          | пробное занятие
+    
+    .header__arrow
+  
+  .school
+    .school-about
+      .container
+        .school-headings
+          .school-headings__title
+            | Изучение
+            br
+            | китайского
+            br
+            | языка
+          .school-headings__subtitle
+            | школа «Лингво East»
+            br
+            | в Ростове-на-Дону
+        
+        .school-info
+          .school-info__text
+            | Языковая школа lingvoeast, первая языковая школа в Ростове на Дону специализирующаяся  на преподавании восточных языков и в первую очередь на обучении китайскому языку! 
+          .school-info__text
+            | В нашей школе применяются современные методики, разработанные в лучших вузах ни только России но и Китая  
+            | и основанные на использовании в учебном процессе этимологических особенностей китайского языка.
+            | Индивидуальный подход и поэтапная программа обучения, позволят Вам быстро и качественно овладеть китайским языком!
+            span еще
+            .school-info__hidden
+              .school-info__hidden-text
+                | Кроме того, в нашей школе Вам могут быть предоставлены программы по изучению английского языка, который прочно занял место международного языка и языка межкультурного общения! 
+              .school-info__hidden-text
+                | Сочетая изучение китайского и английского в языковой школе lingvieast, Вы приобретете знания и навыки делающими Вас незаменимым специалистом в областях экономического и межкультурного взаимодействия
+    
+    .school-features
+      .container
+        .school-features__item.school-features__item--1
+          .school-features__icon
+          .school-features__info
+            .school-features__title
+              | Эффективность
+            .school-features__text
+              | Поэтапное изучение грамматики и лексики языка и его активное изучение на примерах повседневной жизни, наиболее эффективный способ обучения китайскому языку.
+        
+        .school-features__item.school-features__item--2
+          .school-features__icon
+          .school-features__info
+            .school-features__title
+              | Простота
+            .school-features__text
+              | Объяснение материала в доступной и легкой форме, а так же многолетний опыт наших преподавателей поможет Вам легко и просто освоить такой сложный язык, как Китайский!
+        
+        .school-features__item.school-features__item--3
+          .school-features__icon
+          .school-features__info
+            .school-features__title
+              | Результативность
+            .school-features__text
+              | Наша цель помочь Вам разобраться в "Китайской грамоте" и в короткие сроки стать уверенным пользователем китайского языка. Обучение по нашим методикам позволит Вам быстро добиться  хорошего результата. 
+        
+        .school-features__item.school-features__item--4
+          .school-features__icon
+          .school-features__info
+            .school-features__title
+              | Основательность
+            .school-features__text
+              | Наш подход позволит Вам стать ни только активным пользователем китайского языка но и даст Вам уверенное понимание его синтаксиса и грамматики.
+      
+  .training
+    .container
+      .training__title
+        | Форма обучения китайскому языку
+      .training__subtitle
+        | Подход к преподаванию китайского языка в школе Лингво East выделяет несколько возможных форм обучения, выберите удобную для Вас и запишитесь на пробное занятие. 
+      
+      .training-features
+        .training-features__item.training-features__item--1
+          .training-features__icon
+          .training-features__title
+            | По скайпу
+          .training-features__text
+            | Индивидуальные, так и групповые занятия. Группы могут объединять людей из разных географических точек, объединённых общим желанием изучать китайский язык.
+          .button.button-nobg.training-features__button
+            | пробное занятие
+        .training-features__item.training-features__item--2
+          .training-features__icon
+          .training-features__title
+            | Индивидуальные
+          .training-features__text
+            | — это форма обучения для тех, кто хочет овладеть китайским языком так же быстро и качественно, но в удобном для себя ритме.
+          .button.button-nobg.training-features__button
+            | пробное занятие
+        .training-features__item.training-features__item--3
+          .training-features__icon
+          .training-features__title
+            | Групповые
+          .training-features__text
+            | — это стандартная форма обучения, группа включает от 3 и до 12 человек. Удобная политика ценообразования. Группы — самая выгодная форма обучения.
+          .button.button-nobg.training-features__button
+            | пробное занятие
+        .training-features__item.training-features__item--4
+          .training-features__icon
+          .training-features__title
+            | Корпотативные
+          .training-features__text
+            | Перед Вашей компанией стоит задача понимать иностранных партнеров —  корпоративное изучение для Вас. Обучение может проводится на корпоративной территории.
+          .button.button-nobg.training-features__button
+            | пробное занятие
+  
+  .purpose
+    .container
+      .purpose-info
+        .purpose-info__title
+          | Цель обучения
+        .purpose-info__text
+          | Наша цель, помочь Вам выбрать оптимальный языковой курс, соответствующий Вашим целям и пожеланиям при изучении языка. В зависимости от выбранного курса обучения, Вы сможете освоить как базовую грамматику китайского языка, овладеть фонетикой и иероглификой китайского языка, так и просто приобрести минимальный словарный запас, который будет Вам необходим во время туристической или деловой поездке по Китаю!
+        .purpose-info__text
+          | Так же Вашему вниманию будут предложены курс лекций по истории, этнографии, традициям и деловой этики Китая, которые помогут Вам глубже понять культурный "код" страны изучаемого языка. 
+        .button.button-nobg.purpose-info__button
+          | пробное занятие
+  
+  .advantage
+    .container
+      .advantage__title
+        | Приемущества школы Лингво East
+      .advantage__subtitle
+        | Основной конечной целью обучения, является приобретение учащимися знаний базовой грамматики китайского языка, овладение фонетикой, а также умением писать и читать на китайском языке.
+      
+      .advantage-features
+        .advantage-features__item.advantage-features__item--1
+          .advantage-features__icon
+          .advantage-features__info
+            .advantage-features__title
+              | Квалифицированные преподаватели
+            .advantage-features__text
+              | Наши преподаватели обладают многолетним опытом преподавания языка не только в России, но и за рубежом и обучают по новейшим методикам, разработанным как в Российских, так и ведущих Китайских вузах.
+        .advantage-features__item.advantage-features__item--2
+          .advantage-features__icon
+          .advantage-features__info
+            .advantage-features__title
+              | Понятное ценообразование
+            .advantage-features__text
+              | Благодаря гибкой системе оплаты, обучение в нашей школе поможет Вам сэкономить и оптимизировать Ваши затраты на обучение.
+        .advantage-features__item.advantage-features__item--3
+          .advantage-features__icon
+          .advantage-features__info
+            .advantage-features__title
+              | Удобное место на ул.Пушкинская
+            .advantage-features__text
+              | В Ростове-на-Дону занятия проходят на ул. Пушкинская 157 (пер. с Чехова). Кафе Samovar Horse.
+        .advantage-features__item.advantage-features__item--4
+          .advantage-features__icon
+          .advantage-features__info
+            .advantage-features__title
+              | Индивидуальный подход
+            .advantage-features__text
+              | Мы поможем Вам с выбором наиболее подходящего для Вас курса или группы и предложим оптимальное учебное расписание и программу соответствующие Вашим нуждам и пожеланиям.
+        .advantage-features__item.advantage-features__item--5
+          .advantage-features__icon
+          .advantage-features__info
+            .advantage-features__title
+              | Тематические мероприятия
+            .advantage-features__text
+              | В рамках дискуссионного клуба нашей школы проводятся тематические мероприятия и вечера, которые помогут Вам в изучении языка. Просмотры фильмов, мультфильмов, обсуждение прочитанных книг и просто общение на китайском языке.
+        .advantage-features__item.advantage-features__item--6
+          .advantage-features__icon
+          .advantage-features__info
+            .advantage-features__title
+              | Различные программы
+            .advantage-features__text
+              | В нашей школе мы можем предложить Вам широкий выбор учебных программ, отвечающих различным языковым уровням и пожеланиям обучающихся.
+  
+  .teacher
+    .container
+      .teacher__title
+        | Старший преподаватель школы
+      
+      .teacher-content
+        .teacher-photo
+          .teacher-photo__image
+          .button.button-nobg.teacher-photo__button
+            | написать сообщение
+        
+        .teacher-info
+          .teacher-info__title
+            | Самелик Максим Борисович
+          .teacher-info__text
+            | — выпускник Российского университета дружбы народов и шанхайского института иностранных языков, по специальности филология китайского языка.
+          .teacher-info__text
+            | — больше десяти лет преподавал Китайский язык в ведущих московских вузах, таких как - Высшая Школа экономики, РУДН РГГУ, институте востоковедения, институте конфуция и ряда других учебных заведений, а  также несколько лет преподавал Китайский язык на Мальте! 
+          .teacher-info__text
+            | — лауреат конкурса лучший преподаватель китайского языка 2012, 2013, 2014 годов
+  
+  .learning
+    .container
+      .learning__title
+        | Программы обучения китайскому языку
+      
+      .learning-list
+        .learning-item.learning-item--1
+          .learning-item__image
+          .learning-item__info
+            .learning-item__title
+              | Общий курс китайского языка
+            .learning-item__text
+              | Общий курс рассчитан на три академических семестра. Минимальное количество занятий не менее 6 часов в неделю, с условием усиленной домашней работы обучающихся, не менее 4 часов в неделю. Программа общего курса китайского языка и культуры Китая предназначена для студентов ранее не изучавших китайский язык и культуру Китая.
+            .learning-item__text
+              | Основной конечной целью обучения, является приобретение учащимися знаний базовой грамматики китайского языка, овладение фонетикой, а также умением писать и читать на китайском языке. По окончании обучения учащиеся усвоят объём лексики, равный приблизительно 1500 знаков, что составляет около 2000 слов. Студенты научатся владеть устным и письменным языком в объёме изученного материала и смогут общаться на общие и бытовые темы. Также предусматриваются лекции по китайской культуре, деловой этике и традициям китайского народа.
+
+        .learning-item.learning-item--2
+          .learning-item__image
+          .learning-item__info
+            .learning-item__title
+              | Экспресс курс китайского языка
+            .learning-item__text
+              | Экспресс-курс для путешественников длится 1 месяц, занятия по 5 раз в неделю. Интенсивный курс, включает в себя: определенный объем грамматики и лексики, необходимый для кратковременного пребывания в Китае. Лексика данного курса подбирается в соответствии с целями и пожеланиями студента.
+
+        .learning-item.learning-item--3
+          .learning-item__image
+          .learning-item__info
+            .learning-item__title
+              | Бизнес курс китайского языка
+            .learning-item__text
+              | Бизнес-курс включает необходимый объем грамматики и торгово-экономическую лексику. Данный курс подбирается индивидуально в зависимости от цели и интересов студента. 
+
+        .learning-item.learning-item--4
+          .learning-item__image
+          .learning-item__info
+            .learning-item__title
+              | Китайский для детей
+            .learning-item__text
+              | Легкая, игровая форма разработанная специально для детей, поможет Вашему ребёнку в изучении китайского языка, а так же в интересной форме обучит иероглифическому письму и основам каллиграфии! Игровой подход в изучении иностранного языка, является одним из самых эффективных методов.
+
+        .learning-item.learning-item--5
+          .learning-item__image
+          .learning-item__info
+            .learning-item__title
+              | Подготовка к сдаче международного сертификата по китайскому языку HSK
+            .learning-item__text
+              | Вы получите знания и навыки, необходимые для сдачи HSK. Данный курс опирается на базовую грамматику. И в связи с этим занятия проводятся 2 раза в неделю. Подробнее о самом экзамене мы расскажем позже. А пока предупредим, что для успешного обучения в университетах Китая. Вам необходим минимум 4 уровень HSK(их всего 6). Данный уровень послужит отличной основой для освоения специализированной лексики на любом факультете китайского университета.
+  
+  .english
+    .english-photo
+    .english-info
+      .english-info__title
+        | Китайский на Английском
+      .english-info__text
+        | Этот особый курс, предлагаемый Вашему вниманию,  является экспериментальным и предназначен для людей уже овладевших основами английского языка и желающих развивать свои навыки во время изучения нового для себя иностранного языка.
+      .english-info__text
+        | Данная методика полностью исключает употребление русского языка в учебном процессе и тем самым полностью активизирует грамматический и лексический багаж английского языка превращая его в язык "операнд" 
+      .button.button-nobg.english-info__button
+        | пробное занятие
+  
+  .map
+    .container
+      .map-popup
+        .map-popup__text
+          | Зянятия проходят по адресу:
+        .map-popup__text
+          | г. Ростов-на-Дону, ул. Пушкинская, 157
+        .map-popup__text
+          | Кафе Конь-Самовар
+    #map
+  
+  .footer
+    .container
+  
+script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsikV4SjdANJHBhd2AEzcvD5_mg-aFWdQ&callback=initMap" async defer)

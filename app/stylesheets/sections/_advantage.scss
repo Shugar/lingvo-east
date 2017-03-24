@@ -1,0 +1,96 @@
+.advantage {
+  padding: 95px 0 55px;
+
+  &__title {
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 2.5px;
+  }
+
+  &__subtitle {
+    margin-top: 22px;
+    width: 100%;
+    max-width: 80%;
+
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 1.36px;
+    line-height: 28px;
+  }
+
+  &-features {
+    margin-top: 59px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &-features__item {
+    flex: 0 0 45%;
+
+    margin-bottom: 46px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    &--5,
+    &--6 {
+      margin-bottom: 0;
+    }
+
+    &--1 .advantage-features__icon {
+      background-image: url('../images/advantage-1.svg');
+    }
+
+    &--2 .advantage-features__icon {
+      background-image: url('../images/advantage-2.svg');
+    }
+
+    &--3 .advantage-features__icon {
+      background-image: url('../images/advantage-3.svg');
+    }
+
+    &--4 .advantage-features__icon {
+      background-image: url('../images/advantage-4.svg');
+    }
+
+    &--5 .advantage-features__icon {
+      background-image: url('../images/advantage-5.svg');
+    }
+
+    &--6 .advantage-features__icon {
+      background-image: url('../images/advantage-6.svg');
+    }
+  }
+
+  &-features__icon {
+    margin-right: 44px;
+    flex: 0 0 167px;
+    height: 168px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  &-features__info {
+    margin-top: 24px;
+  }
+
+  &-features__title {
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 1.38px;
+  }
+
+  &-features__text {
+    margin-top: 10px;
+
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0.81px;
+    line-height: 20px;
+  }
+}

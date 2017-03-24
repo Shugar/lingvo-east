@@ -1,0 +1,82 @@
+.learning {
+  padding: 65px 0 90px;
+
+  &__title {
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 2.5px;
+  }
+
+  &-list {
+    margin-top: 60px;
+  }
+
+  &-item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--1 .learning-item__image {
+      background-image: url('../images/learning-1.svg');
+    }
+
+    &--2 .learning-item__image {
+      background-image: url('../images/learning-2.svg');
+    }
+
+    &--3 .learning-item__image {
+      background-image: url('../images/learning-3.svg');
+    }
+
+    &--4 .learning-item__image {
+      background-image: url('../images/learning-4.svg');
+    }
+
+    &--5 .learning-item__image {
+      background-image: url('../images/learning-5.svg');
+    }
+  }
+
+  &-item__image {
+    margin-right: 75px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    height: 192px;
+    flex: 0 0 200px;
+  }
+
+  &-item__info {
+    
+  }
+
+  &-item__title {
+    margin-bottom: 17px;
+
+    font-size: 32px;
+    color: #000000;
+    letter-spacing: 2px;
+    line-height: 38px;
+  }
+
+  &-item__text {
+    margin-bottom: 28px;
+
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 1.36px;
+    line-height: 28px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

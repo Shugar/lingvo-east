@@ -1,0 +1,84 @@
+.training {
+  padding: 50px 0 60px;
+
+  &__title {
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 2.5px;
+  }
+
+  &__subtitle {
+    margin-top: 22px;
+    width: 100%;
+    max-width: 85%;
+
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 1.5px;
+    line-height: 33px;
+  }
+
+  &-features {
+    margin-top: 38px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  &-features__item {
+    flex: 0 0 20%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &--1 .training-features__icon {
+      background-image: url('../images/training-feature-1.svg');
+    }
+
+    &--2 .training-features__icon {
+      background-image: url('../images/training-feature-2.svg');
+    }
+
+    &--3 .training-features__icon {
+      background-image: url('../images/training-feature-3.svg');
+    }
+
+    &--4 .training-features__icon {
+      background-image: url('../images/training-feature-4.svg');
+    }
+  }
+
+  &-features__icon {
+    width: 154px;
+    height: 154px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  &-features__title {
+    margin-top: 28px;
+
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 1.5px;
+    line-height: 33px;
+  }
+
+  &-features__text {
+    margin-top: 20px;
+
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0.81px;
+    line-height: 20px;
+  }
+
+  &-features__button {
+    margin-top: 30px;
+  }
+}
