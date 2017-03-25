@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Китайский язык Ростов-на-дону школа — "Лингво East"</title>
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="javascripts/vendor.js"></script>
+  <script src="javascripts/app.js"></script>
+  <script>
+    require('initialize');
+    
+    var styles = [
+      {
+        stylers: [
+          { saturation: -100 }
+        ]
+      }
+    ]
+    
+    function initMap() {
+      var marker = {lat: 47.2272931, lng: 39.7231895}
+      var center = document.body.clientWidth < 768 ?
+        {lat: 47.2272931, lng: 39.7231895} : { lat: 47.2272931, lng: 39.7210008 }
+    
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: center,
+        scrollwheel: false,
+        zoom: 17,
+        disableDefaultUI: true
+      });
+    
+      map.setOptions({styles: styles});
+    
+      var marker = new google.maps.Marker({
+        position: marker,
+        map: map
+      });
+    }
+    
+  </script>
+</head>
+<body>
+  <div id="header" class="header">
+    <div class="header-burger"></div>
+    <div class="header-menu--mobile">
+      <div class="header-menu__inner">
+        <div class="header-menu__cross"></div>
+        <div class="header-menu__title">Меню</div><a href="#school" class="header-menu__item">О школе</a><a href="#training" class="header-menu__item">Формы обучения</a><a href="#learning" class="header-menu__item">Программы обучения</a><a href="#teacher" class="header-menu__item">Преподаватели</a><a href="#purpose" class="header-menu__item">Цель обучения</a><a href="#advantage" class="header-menu__item">Преимущества нашей школы</a><a href="#english" class="header-menu__item">Китайский на английском</a><a href="#map" class="header-menu__item">Контакты</a><a href="#footer" class="header-menu__item">Позвонить сейчас</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header-logo"></div>
+      <div class="header-center">
+        <div class="header__title">Школа китайского языка<br>в Ростове-на-Дону</div>
+        <div class="header__menu">
+          <div class="header__list"><a href="#school" class="header__list-item">О школе</a><a href="#training" class="header__list-item">Формы обучения</a><a href="#learning" class="header__list-item">Программы обучения</a><a href="#teacher" class="header__list-item">Преподаватели</a></div>
+          <div class="header__list"><a href="#purpose" class="header__list-item">Цель обучения</a><a href="#advantage" class="header__list-item">Преимущества нашей школы</a><a href="#english" class="header__list-item">Китайский на английском</a><a href="#map" class="header__list-item">Контакты</a></div>
+        </div>
+      </div>
+      <div class="header-contact">
+        <div class="header-contact__phone">+7(908) 508-93-06</div><a href="#footer" class="button header-contact__button">пробное занятие</a>
+      </div>
+    </div>
+    <div class="header__arrow"></div>
+  </div>
+  <div id="school" class="school">
+    <div class="school-about">
+      <div class="container">
+        <div class="school-headings">
+          <div class="school-headings__title">Изучение <br> китайского <br> языка</div>
+          <div class="school-headings__subtitle">школа «Лингво East» <br> в Ростове-на-Дону</div>
+        </div>
+        <div class="school-info">
+          <div class="school-info__text">Языковая школа lingvoeast, первая языковая школа в Ростове на Дону специализирующаяся  на преподавании восточных языков и в первую очередь на обучении китайскому языку! </div>
+          <div class="school-info__text">
+            В нашей школе применяются современные методики, разработанные в лучших вузах ни только России но и Китая
+            и основанные на использовании в учебном процессе этимологических особенностей китайского языка.
+            Индивидуальный подход и поэтапная программа обучения, позволят Вам быстро и качественно овладеть китайским языком!<span>еще</span>
+            <div class="school-info__hidden">
+              <div class="school-info__hidden-text">Кроме того, в нашей школе Вам могут быть предоставлены программы по изучению английского языка, который прочно занял место международного языка и языка межкультурного общения! </div>
+              <div class="school-info__hidden-text">Сочетая изучение китайского и английского в языковой школе lingvieast, Вы приобретете знания и навыки делающими Вас незаменимым специалистом в областях экономического и межкультурного взаимодействия</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="school-features">
+      <div class="container">
+        <div class="school-features__item school-features__item--1">
+          <div class="school-features__icon"></div>
+          <div class="school-features__info">
+            <div class="school-features__title">Эффективность</div>
+            <div class="school-features__text">Поэтапное изучение грамматики и лексики языка и его активное изучение на примерах повседневной жизни, наиболее эффективный способ обучения китайскому языку.</div>
+          </div>
+        </div>
+        <div class="school-features__item school-features__item--2">
+          <div class="school-features__icon"></div>
+          <div class="school-features__info">
+            <div class="school-features__title">Простота</div>
+            <div class="school-features__text">Объяснение материала в доступной и легкой форме, а так же многолетний опыт наших преподавателей поможет Вам легко и просто освоить такой сложный язык, как Китайский!</div>
+          </div>
+        </div>
+        <div class="school-features__item school-features__item--3">
+          <div class="school-features__icon"></div>
+          <div class="school-features__info">
+            <div class="school-features__title">Результативность</div>
+            <div class="school-features__text">Наша цель помочь Вам разобраться в "Китайской грамоте" и в короткие сроки стать уверенным пользователем китайского языка. Обучение по нашим методикам позволит Вам быстро добиться  хорошего результата. </div>
+          </div>
+        </div>
+        <div class="school-features__item school-features__item--4">
+          <div class="school-features__icon"></div>
+          <div class="school-features__info">
+            <div class="school-features__title">Основательность</div>
+            <div class="school-features__text">Наш подход позволит Вам стать ни только активным пользователем китайского языка но и даст Вам уверенное понимание его синтаксиса и грамматики.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="training" class="training">
+    <div class="container">
+      <div class="training__title">Форма обучения китайскому языку</div>
+      <div class="training__subtitle">Подход к преподаванию китайского языка в школе Лингво East выделяет несколько возможных форм обучения, выберите удобную для Вас и запишитесь на пробное занятие. </div>
+      <div class="training-features">
+        <div class="training-features__item training-features__item--1">
+          <div class="training-features__icon"></div>
+          <div class="training-features__title">По скайпу</div>
+          <div class="training-features__text">Индивидуальные, так и групповые занятия. Группы могут объединять людей из разных географических точек, объединённых общим желанием изучать китайский язык.</div><a href="#footer" class="button button-nobg training-features__button">пробное занятие</a>
+        </div>
+        <div class="training-features__item training-features__item--2">
+          <div class="training-features__icon"></div>
+          <div class="training-features__title">Индивидуальные</div>
+          <div class="training-features__text">— это форма обучения для тех, кто хочет овладеть китайским языком так же быстро и качественно, но в удобном для себя ритме.</div><a href="#footer" class="button button-nobg training-features__button">пробное занятие</a>
+        </div>
+        <div class="training-features__item training-features__item--3">
+          <div class="training-features__icon"></div>
+          <div class="training-features__title">Групповые</div>
+          <div class="training-features__text">— это стандартная форма обучения, группа включает от 3 и до 12 человек. Удобная политика ценообразования. Группы — самая выгодная форма обучения.</div><a href="#footer" class="button button-nobg training-features__button">пробное занятие</a>
+        </div>
+        <div class="training-features__item training-features__item--4">
+          <div class="training-features__icon"></div>
+          <div class="training-features__title">Корпотативные</div>
+          <div class="training-features__text">Перед Вашей компанией стоит задача понимать иностранных партнеров —  корпоративное изучение для Вас. Обучение может проводится на корпоративной территории.</div><a href="#footer" class="button button-nobg training-features__button">пробное занятие</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="purpose" class="purpose">
+    <div class="container">
+      <div class="purpose-info">
+        <div class="purpose-info__title">Цель обучения</div>
+        <div class="purpose-info__text">Наша цель, помочь Вам выбрать оптимальный языковой курс, соответствующий Вашим целям и пожеланиям при изучении языка. В зависимости от выбранного курса обучения, Вы сможете освоить как базовую грамматику китайского языка, овладеть фонетикой и иероглификой китайского языка, так и просто приобрести минимальный словарный запас, который будет Вам необходим во время туристической или деловой поездке по Китаю!</div>
+        <div class="purpose-info__text">Так же Вашему вниманию будут предложены курс лекций по истории, этнографии, традициям и деловой этики Китая, которые помогут Вам глубже понять культурный "код" страны изучаемого языка. </div><a href="#footer" class="button button-nobg purpose-info__button">пробное занятие</a>
+      </div>
+    </div>
+  </div>
+  <div id="advantage" class="advantage">
+    <div class="container">
+      <div class="advantage__title">Приемущества школы Лингво East</div>
+      <div class="advantage__subtitle">Основной конечной целью обучения, является приобретение учащимися знаний базовой грамматики китайского языка, овладение фонетикой, а также умением писать и читать на китайском языке.</div>
+      <div class="advantage-features">
+        <div class="advantage-features__item advantage-features__item--1">
+          <div class="advantage-features__icon"></div>
+          <div class="advantage-features__info">
+            <div class="advantage-features__title">Квалифицированные преподаватели</div>
+            <div class="advantage-features__text">Наши преподаватели обладают многолетним опытом преподавания языка не только в России, но и за рубежом и обучают по новейшим методикам, разработанным как в Российских, так и ведущих Китайских вузах.</div>
+          </div>
+        </div>
+        <div class="advantage-features__item advantage-features__item--2">
+          <div class="advantage-features__icon"></div>
+          <div class="advantage-features__info">
+            <div class="advantage-features__title">Понятное ценообразование</div>
+            <div class="advantage-features__text">Благодаря гибкой системе оплаты, обучение в нашей школе поможет Вам сэкономить и оптимизировать Ваши затраты на обучение.</div>
+          </div>
+        </div>
+        <div class="advantage-features__item advantage-features__item--3">
+          <div class="advantage-features__icon"></div>
+          <div class="advantage-features__info">
+            <div class="advantage-features__title">Удобное место на ул.Пушкинская</div>
+            <div class="advantage-features__text">В Ростове-на-Дону занятия проходят на ул. Пушкинская 157 (пер. с Чехова). Кафе Samovar Horse.</div>
+          </div>
+        </div>
+        <div class="advantage-features__item advantage-features__item--4">
+          <div class="advantage-features__icon"></div>
+          <div class="advantage-features__info">
+            <div class="advantage-features__title">Индивидуальный подход</div>
+            <div class="advantage-features__text">Мы поможем Вам с выбором наиболее подходящего для Вас курса или группы и предложим оптимальное учебное расписание и программу соответствующие Вашим нуждам и пожеланиям.</div>
+          </div>
+        </div>
+        <div class="advantage-features__item advantage-features__item--5">
+          <div class="advantage-features__icon"></div>
+          <div class="advantage-features__info">
+            <div class="advantage-features__title">Тематические мероприятия</div>
+            <div class="advantage-features__text">В рамках дискуссионного клуба нашей школы проводятся тематические мероприятия и вечера, которые помогут Вам в изучении языка. Просмотры фильмов, мультфильмов, обсуждение прочитанных книг и просто общение на китайском языке.</div>
+          </div>
+        </div>
+        <div class="advantage-features__item advantage-features__item--6">
+          <div class="advantage-features__icon"></div>
+          <div class="advantage-features__info">
+            <div class="advantage-features__title">Различные программы</div>
+            <div class="advantage-features__text">В нашей школе мы можем предложить Вам широкий выбор учебных программ, отвечающих различным языковым уровням и пожеланиям обучающихся.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="teacher" class="teacher">
+    <div class="container">
+      <div class="teacher__title">Старший преподаватель школы</div>
+      <div class="teacher-content">
+        <div class="teacher-photo">
+          <div class="teacher-photo__image"></div><a href="#footer" class="button button-nobg teacher-photo__button">написать сообщение</a>
+        </div>
+        <div class="teacher-info">
+          <div class="teacher-info__title">Самелик Максим Борисович</div>
+          <div class="teacher-info__text">— выпускник Российского университета дружбы народов и шанхайского института иностранных языков, по специальности филология китайского языка.</div>
+          <div class="teacher-info__text">— больше десяти лет преподавал Китайский язык в ведущих московских вузах, таких как - Высшая Школа экономики, РУДН РГГУ, институте востоковедения, институте конфуция и ряда других учебных заведений, а  также несколько лет преподавал Китайский язык на Мальте! </div>
+          <div class="teacher-info__text">— лауреат конкурса лучший преподаватель китайского языка 2012, 2013, 2014 годов</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="learning" class="learning">
+    <div class="container">
+      <div class="learning__title">Программы обучения китайскому языку</div>
+      <div class="learning-list">
+        <div class="learning-item learning-item--1">
+          <div class="learning-item__image"></div>
+          <div class="learning-item__info">
+            <div class="learning-item__title">Общий курс китайского языка</div>
+            <div class="learning-item__text">Общий курс рассчитан на три академических семестра. Минимальное количество занятий не менее 6 часов в неделю, с условием усиленной домашней работы обучающихся, не менее 4 часов в неделю. Программа общего курса китайского языка и культуры Китая предназначена для студентов ранее не изучавших китайский язык и культуру Китая. <br><br>Основной конечной целью обучения, является приобретение учащимися знаний базовой грамматики китайского языка, овладение фонетикой, а также умением писать и читать на китайском языке. По окончании обучения учащиеся усвоят объём лексики, равный приблизительно 1500 знаков, что составляет около 2000 слов. Студенты научатся владеть устным и письменным языком в объёме изученного материала и смогут общаться на общие и бытовые темы. Также предусматриваются лекции по китайской культуре, деловой этике и традициям китайского народа.</div>
+          </div>
+        </div>
+        <div class="learning-item learning-item--2">
+          <div class="learning-item__image"></div>
+          <div class="learning-item__info">
+            <div class="learning-item__title">Экспресс курс китайского языка</div>
+            <div class="learning-item__text">Экспресс-курс для путешественников длится 1 месяц, занятия по 5 раз в неделю. Интенсивный курс, включает в себя: определенный объем грамматики и лексики, необходимый для кратковременного пребывания в Китае. Лексика данного курса подбирается в соответствии с целями и пожеланиями студента.</div>
+          </div>
+        </div>
+        <div class="learning-item learning-item--3">
+          <div class="learning-item__image"></div>
+          <div class="learning-item__info">
+            <div class="learning-item__title">Бизнес курс китайского языка</div>
+            <div class="learning-item__text">Бизнес-курс включает необходимый объем грамматики и торгово-экономическую лексику. Данный курс подбирается индивидуально в зависимости от цели и интересов студента. </div>
+          </div>
+        </div>
+        <div class="learning-item learning-item--4">
+          <div class="learning-item__image"></div>
+          <div class="learning-item__info">
+            <div class="learning-item__title">Китайский для детей</div>
+            <div class="learning-item__text">Легкая, игровая форма разработанная специально для детей, поможет Вашему ребёнку в изучении китайского языка, а так же в интересной форме обучит иероглифическому письму и основам каллиграфии! Игровой подход в изучении иностранного языка, является одним из самых эффективных методов.</div>
+          </div>
+        </div>
+        <div class="learning-item learning-item--5">
+          <div class="learning-item__image"></div>
+          <div class="learning-item__info">
+            <div class="learning-item__title">Подготовка к сдаче международного сертификата по китайскому языку HSK</div>
+            <div class="learning-item__text">Вы получите знания и навыки, необходимые для сдачи HSK. Данный курс опирается на базовую грамматику. И в связи с этим занятия проводятся 2 раза в неделю. Подробнее о самом экзамене мы расскажем позже. А пока предупредим, что для успешного обучения в университетах Китая. Вам необходим минимум 4 уровень HSK(их всего 6). Данный уровень послужит отличной основой для освоения специализированной лексики на любом факультете китайского университета.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="english" class="english">
+    <div class="english-photo"></div>
+    <div class="english-info">
+      <div class="english-info__title">Китайский на Английском</div>
+      <div class="english-info__text">Этот особый курс, предлагаемый Вашему вниманию,  является экспериментальным и предназначен для людей уже овладевших основами английского языка и желающих развивать свои навыки во время изучения нового для себя иностранного языка.</div>
+      <div class="english-info__text">Данная методика полностью исключает употребление русского языка в учебном процессе и тем самым полностью активизирует грамматический и лексический багаж английского языка превращая его в язык "операнд" </div><a href="#footer" class="button button-nobg english-info__button">пробное занятие</a>
+    </div>
+  </div>
+  <div class="map">
+    <div class="container">
+      <div class="map-popup">
+        <div class="map-popup__text">Зянятия проходят по адресу:</div>
+        <div class="map-popup__text">г. Ростов-на-Дону, ул. Пушкинская, 157</div>
+        <div class="map-popup__text">Кафе Конь-Самовар</div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </div>
+  <div id="footer" class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <div class="footer-info__title">Запись <br> на занятие <br> или просто <br> пишите ;)</div>
+        <div class="footer-info__subtitle">Подробнее о самом экзамене мы расскажем позже. А пока предупредим, что для успешного обучения в университетах</div>
+        <div class="footer-socials"><a target="_blank" href="http://facebook.com" class="footer-socials__fb"></a><a target="_blank" href="http://vk.com" class="footer-socials__vk"></a><a target="_blank" href="http://youtube.com" class="footer-socials__you"></a></div>
+      </div>
+      <form class="footer-form">
+        <div class="footer-form__input">
+          <input type="text" placeholder="ФИО">
+        </div>
+        <div class="footer-form__input">
+          <input type="email" placeholder="E-mail">
+        </div>
+        <div class="footer-form__input">
+          <input type="number" placeholder="Телефон">
+        </div>
+        <div class="footer-form__input">
+          <input type="text" placeholder="Интересующая программа">
+        </div>
+        <div class="footer-form__textarea">
+          <textarea placeholder="Ваше сообщение"></textarea>
+        </div>
+        <div class="footer-form__button button button-nobg">отправить заявку</div>
+      </form>
+      <div class="footer-socials--mobile"><a target="_blank" href="http://facebook.com" class="footer-socials__fb"></a><a target="_blank" href="http://vk.com" class="footer-socials__vk"></a><a target="_blank" href="http://youtube.com" class="footer-socials__you"></a></div><a href="#header" class="footer__up"><span>^</span> вверх</a>
+    </div>
+  </div>
+</body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsikV4SjdANJHBhd2AEzcvD5_mg-aFWdQ&amp;callback=initMap" async defer></script>
