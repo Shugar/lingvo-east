@@ -91,6 +91,28 @@
 }
 
 
+@media (max-width: 1024px) {
+  .header {
+    &-logo {
+      margin-left: 0;
+      height: 127px;
+      width: 90px;
+    }
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__list:first-child {
+      margin-right: 20px;
+    }
+
+    &__list-item {
+      font-size: 14px;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     padding: 24px 0;
@@ -98,12 +120,6 @@
 
     .container {
       display: block;
-    }
-
-    &-logo {
-      margin-left: 0;
-      height: 127px;
-      width: 90px;
     }
 
     &__title {

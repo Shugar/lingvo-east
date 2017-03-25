@@ -98,6 +98,8 @@
       width: 100%;
       border: none;
       border-bottom: 1px #000000 solid;
+      
+      -webkit-appearance: none;
 
       &::-webkit-input-placeholder {
         color: #000000;
