@@ -1,4 +1,4 @@
-import $     from "jquery";
+import $ from "jquery";
 
 function onMenuClick (item) {
   $(item).on('click', function (e) {

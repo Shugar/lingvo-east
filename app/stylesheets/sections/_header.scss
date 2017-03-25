@@ -76,8 +76,11 @@
 
   &-contact__phone {
     font-size: 23px;
-    color: #E20714;
     letter-spacing: 1.86px;
+
+    a {
+      color: #E20714;
+    }
   }
 
   &-contact__button {
