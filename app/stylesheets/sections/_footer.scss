@@ -144,6 +144,10 @@
     color: #D0011B;
     letter-spacing: 1.57px;
   }
+
+  &-socials--mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -197,6 +201,26 @@
       display: block;
       width: 100%;
       text-align: center;
+
+      font-size: 30px;
+      letter-spacing: 1.31px;
+    }
+
+    &-socials--mobile {
+      margin-top: 35px;
+
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+
+      .footer-socials__fb,
+      .footer-socials__vk,
+      .footer-socials__you {
+        height: 40px;
+        width: 40px;
+        opacity: 1 !important;
+      }
     }
   }
 }

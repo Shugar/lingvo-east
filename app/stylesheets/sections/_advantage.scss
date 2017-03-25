@@ -120,7 +120,8 @@
 
     &-features__item {
       flex: 1;
-      margin-bottom: 21px
+      margin-bottom: 21px;
+      justify-content: flex-start;
     }
 
     &-features__item--6 {

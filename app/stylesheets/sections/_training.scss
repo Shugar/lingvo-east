@@ -109,7 +109,7 @@
     }
 
     &-features__item {
-      flex: 0 0 50%;
+      flex: 0 0 25%;
 
       &--1,
       &--2 {
@@ -143,6 +143,14 @@
       color: #E20F18 !important;
       letter-spacing: 0.81px;
       line-height: 14px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .training {
+    &-features__item {
+      flex: 0 0 50%;
     }
   }
 }

@@ -20,19 +20,21 @@ head
         ]
       }
     ]
-    
+
     function initMap() {
-      var marker = {lat: 47.2272931, lng: 39.7231895};
-      
+      var marker = {lat: 47.2272931, lng: 39.7231895}
+      var center = document.body.clientWidth < 768 ?
+        {lat: 47.2272931, lng: 39.7231895} : { lat: 47.2272931, lng: 39.7210008 }
+
       var map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 47.2272931, lng: 39.7210008 },
+        center: center,
         scrollwheel: false,
         zoom: 17,
         disableDefaultUI: true
       });
 
       map.setOptions({styles: styles});
-      
+
       var marker = new google.maps.Marker({
         position: marker,
         map: map
@@ -41,6 +43,31 @@ head
 
 body
   .header#header
+    .header-burger
+    .header-menu--mobile
+      .header-menu__inner
+        .header-menu__cross
+        .header-menu__title
+          | Меню
+        a.header-menu__item(href="#school")
+          | О школе
+        a.header-menu__item(href="#training")
+          | Формы обучения
+        a.header-menu__item(href="#learning")
+          | Программы обучения
+        a.header-menu__item(href="#teacher")
+          | Преподаватели
+        a.header-menu__item(href="#purpose")
+          | Цель обучения
+        a.header-menu__item(href="#advantage")
+          | Преимущества нашей школы
+        a.header-menu__item(href="#english")
+          | Китайский на английском
+        a.header-menu__item(href="#map")
+          | Контакты
+        a.header-menu__item(href="#footer")
+          | Позвонить сейчас
+
     .container
       .header-logo
       .header-center
@@ -48,7 +75,7 @@ body
           | Школа китайского языка
           br
           | в Ростове-на-Дону
-
+          
         .header__menu
           .header__list
             a.header__list-item(href="#school")
@@ -72,7 +99,7 @@ body
       .header-contact
         .header-contact__phone
           | +7(908) 508-93-06
-        .button.header-contact__button
+        a.button.header-contact__button(href="#footer")
           | пробное занятие
     
     .header__arrow
@@ -148,7 +175,7 @@ body
             | По скайпу
           .training-features__text
             | Индивидуальные, так и групповые занятия. Группы могут объединять людей из разных географических точек, объединённых общим желанием изучать китайский язык.
-          .button.button-nobg.training-features__button
+          a.button.button-nobg.training-features__button(href="#footer")
             | пробное занятие
         .training-features__item.training-features__item--2
           .training-features__icon
@@ -156,7 +183,7 @@ body
             | Индивидуальные
           .training-features__text
             | — это форма обучения для тех, кто хочет овладеть китайским языком так же быстро и качественно, но в удобном для себя ритме.
-          .button.button-nobg.training-features__button
+          a.button.button-nobg.training-features__button(href="#footer")
             | пробное занятие
         .training-features__item.training-features__item--3
           .training-features__icon
@@ -164,7 +191,7 @@ body
             | Групповые
           .training-features__text
             | — это стандартная форма обучения, группа включает от 3 и до 12 человек. Удобная политика ценообразования. Группы — самая выгодная форма обучения.
-          .button.button-nobg.training-features__button
+          a.button.button-nobg.training-features__button(href="#footer")
             | пробное занятие
         .training-features__item.training-features__item--4
           .training-features__icon
@@ -172,7 +199,7 @@ body
             | Корпотативные
           .training-features__text
             | Перед Вашей компанией стоит задача понимать иностранных партнеров —  корпоративное изучение для Вас. Обучение может проводится на корпоративной территории.
-          .button.button-nobg.training-features__button
+          a.button.button-nobg.training-features__button(href="#footer")
             | пробное занятие
   
   .purpose#purpose
@@ -184,7 +211,7 @@ body
           | Наша цель, помочь Вам выбрать оптимальный языковой курс, соответствующий Вашим целям и пожеланиям при изучении языка. В зависимости от выбранного курса обучения, Вы сможете освоить как базовую грамматику китайского языка, овладеть фонетикой и иероглификой китайского языка, так и просто приобрести минимальный словарный запас, который будет Вам необходим во время туристической или деловой поездке по Китаю!
         .purpose-info__text
           | Так же Вашему вниманию будут предложены курс лекций по истории, этнографии, традициям и деловой этики Китая, которые помогут Вам глубже понять культурный "код" страны изучаемого языка. 
-        .button.button-nobg.purpose-info__button
+        a.button.button-nobg.purpose-info__button(href="#footer")
           | пробное занятие
   
   .advantage#advantage
@@ -246,7 +273,7 @@ body
       .teacher-content
         .teacher-photo
           .teacher-photo__image
-          .button.button-nobg.teacher-photo__button
+          a.button.button-nobg.teacher-photo__button(href="#footer")
             | написать сообщение
         
         .teacher-info
@@ -314,7 +341,7 @@ body
         | Этот особый курс, предлагаемый Вашему вниманию,  является экспериментальным и предназначен для людей уже овладевших основами английского языка и желающих развивать свои навыки во время изучения нового для себя иностранного языка.
       .english-info__text
         | Данная методика полностью исключает употребление русского языка в учебном процессе и тем самым полностью активизирует грамматический и лексический багаж английского языка превращая его в язык "операнд" 
-      .button.button-nobg.english-info__button
+      a.button.button-nobg.english-info__button(href="#footer")
         | пробное занятие
   
   .map
@@ -353,7 +380,12 @@ body
           textarea(placeholder="Ваше сообщение")
         .footer-form__button.button.button-nobg
           | отправить заявку
-    
+      
+      .footer-socials--mobile
+        a.footer-socials__fb(target="_blank" href="http://facebook.com")
+        a.footer-socials__vk(target="_blank" href="http://vk.com")
+        a.footer-socials__you(target="_blank" href="http://youtube.com")
+
       a.footer__up(href="#header")
         | <span>^</span> вверх
         
