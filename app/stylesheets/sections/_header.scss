@@ -5,6 +5,8 @@
 
   padding-top: 86px;
 
+  position: relative;
+
   .container {
     display: flex;
     flex-flow: row nowrap;
@@ -60,14 +62,28 @@
     justify-content: space-between;
   }
 
+  &__list {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+
   &__list-item {
-    margin-top: 14px;
-    display: block;
+    margin-top: 12px;
+    padding-bottom: 2px;
 
     font-size: 16px;
     color: #000000;
     letter-spacing: 1px;
     line-height: 14px;
+    border-bottom: 1px transparent solid;
+
+    transition: border-color 0.2s ease;
+    will-change: border-color;
+
+    &:hover {
+      border-color: #a3a3a3;
+    }
   }
 
   &-contact {
@@ -242,6 +258,19 @@
       position: absolute;
       top: 20px;
       right: 20px;
+    }
+  }
+}
+
+
+@media (min-width: 615px) and (max-width: 768px) {
+  .header {
+    min-height: 340px !important;
+    height: initial !important;
+
+    .container {
+      display: flex;
+      margin-top: 20px;
     }
   }
 }

@@ -13,8 +13,16 @@
 
   cursor: pointer;
 
+  transition: background 0.2s ease, color 0.2s ease;
+  will-change: background, color;
+
   &.button-nobg {
     background: none;
     color: #000000;
+  }
+
+  &:hover {
+    background: #E30614;
+    color: #FFFFFF;
   }
 }

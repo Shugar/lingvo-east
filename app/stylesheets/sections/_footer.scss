@@ -91,6 +91,10 @@
 
     input,
     textarea {
+      font-family: "Helvetica Neue", sans-serif;
+      font-weight: 100;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       display: block;
       padding-bottom: 16px;
       background: none;
@@ -100,6 +104,11 @@
       border-bottom: 1px #000000 solid;
       border-radius: 0;
       -webkit-appearance: none;
+
+      transition: border-color 0.2s ease;
+      will-change: border-color;
+
+      -webkit-box-shadow: 0 0 0px 1000px white inset;
 
       &::-webkit-input-placeholder {
         color: #000000;
@@ -136,10 +145,17 @@
     color: #000000;
     letter-spacing: 1.09px;
     line-height: 29px;
+    outline: none;
+
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   &__up {
     position: absolute;
+    left: 50px;
     bottom: 0;
     cursor: pointer;
     font-size: 36px;
@@ -149,6 +165,14 @@
 
   &-socials--mobile {
     display: none;
+  }
+
+  .input-success {
+    border-color: #81C784;
+  }
+
+  .input-error {
+    border-color: #D0011B;
   }
 }
 
